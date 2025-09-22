@@ -1,8 +1,17 @@
+# backend/.gitignore
+
 # Dependencies
-node_modules
+/node_modules
+
+# Build output
+/dist
 
 # Environment variables
 .env
 
-# Build output
-dist
+# TypeScript cache and build artifacts
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+!src/index.d.ts
